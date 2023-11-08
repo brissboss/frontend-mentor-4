@@ -21,20 +21,240 @@ time, mark, audio, video {
 }
 
 @font-face {
-    font-family: 'Overpass', sans-serif;
-    src: url(/fonts/Overpass/Overpass-VariableFont_wght.ttf);
+    font-family: 'Overpass';
+    src: url(/fonts/Overpass/Overpass-VariableFont_wght.ttf), format(truetype);
 }
 
 body {
-    font-family: 'Overpass', sans-serif;
+    font-family: 'Overpass';
     font-weight: 400;
     font-size: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
 
     background-color: hsl(216, 12%, 8%);
     color:  hsl(0, 0%, 100%);
 }
 
-.thank-card {
+.visible {
+    display: flex;
+}
+
+.invisible {
     display: none;
+}
+
+.rating-card {
+    flex-direction: column;
+
+    border-radius: 14px;
+    padding: 20px;
+
+    width: min(75vw, 18rem);
+    height: min(45vh, 19rem);
+
+    background-image: linear-gradient(352deg, hsl(213, 19%, 14%), hsl(213, 19%, 18%));
+}
+
+
+.thank-card {
+    flex-direction: column;
+
+    border-radius: 14px;
+    padding: 20px;
+
+    width: min(75vw, 18rem);
+    height: min(45vh, 19rem);
+
+    background-image: linear-gradient(352deg, hsl(213, 19%, 14%), hsl(213, 19%, 18%));
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 28%;
+}
+
+.star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 15px;
+    height: 15px;
+
+    padding: 9px;
+    border-radius: 100%;
+
+    background-color: hsl(213, 19%, 23%);
+}
+
+.title img {
+    width: 13px;
+}
+
+.title h1 {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 35%;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: hsl(217, 12%, 63%);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 45%;
+}
+
+.number {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 70%;
+}
+
+.button {
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+
+    padding: 12px;
+
+    background-color: hsl(213, 19%, 23%);
+
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.button:hover {
+    background-color: hsl(25, 97%, 53%);
+}
+
+.button-active {
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+
+    padding: 12px;
+
+    background-color: hsl(216, 12%, 54%);
+
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.button-submit {
+    cursor: pointer;
+
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 30%;
+    padding-top: 4px;
+
+    border-radius: 40px;
+
+    background-color: hsl(25, 97%, 53%);
+
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.button-submit:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+/* specially for thank-card */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-info {
+    display: flex;
+
+    border-radius: 40px;
+    padding: 8px 10px 6px 10px;
+    margin: 25px 0 10px 0;
+
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(213, 19%, 23%);
+}
+
+.title-thank {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 28%;
+
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.content-thank {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    height: 35%;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: hsl(217, 12%, 63%);
 }
 

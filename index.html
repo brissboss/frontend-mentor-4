@@ -15,8 +15,11 @@
 <body>
 
 	<!-- Rating state start -->
-	<div class="rating-card">
+	<div class="rating-card visible">
 		<div class="title">
+			<div class="star">
+				<img src="/images/icon-star.svg" alt="">
+			</div>
 			<h1>How did we do?</h1>
 		</div>
 		<div class="content">
@@ -25,7 +28,7 @@
 				to help us improve our offering!
 			</p>
 		</div>
-		<form action="">
+		<form action="" class="form">
 			<div class="number">
 				<div class="button" id="one">1</div>
 				<div class="button" id="two">2</div>
@@ -34,25 +37,24 @@
 				<div class="button" id="five">5</div>
 			</div>
 			<div class="button-submit">
-				Submit
+				<h1>Submit</h1>
 			</div>
 		</form>
 	</div>
 	<!-- Rating state end -->
 
 	<!-- Thank you state start -->
-	<div class="thank-card">
+	<div class="thank-card invisible">
 		<div class="info">
-			<p>
-				You selected
-				<p class="number-selected">[x]</p>
-				out of 5
+			<img src="/images/illustration-thank-you.svg" alt="">
+			<p class="text-info">
+				You selected 4 out of 5
 			</p>
 		</div>
-		<div class="title">
+		<div class="title-thank">
 			<h1>Thank you!</h1>
 		</div>
-		<div class="content">
+		<div class="content-thank">
 			<p>
 				We appreciate you taking the time to give a rating. If you ever need more support,
 				don’t hesitate to get in touch!
