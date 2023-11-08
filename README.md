@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution page](https://your-solution-url.com)
+- Solution URL: [Solution page](https://www.frontendmentor.io/solutions/interactive-rating-component-mobile-first-OOoZ80CZwf)
 - Live Site URL: [My solution](https://frontend-mentor-4-fawn.vercel.app/)
 
 ## My process
